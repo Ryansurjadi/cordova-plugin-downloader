@@ -33,6 +33,9 @@
       <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
    </config-file>
+   <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+      <application android:requestLegacyExternalStorage="true" />
+   </edit-config>
    
     <!-- <source-file
       src="src/android/libs/support-v4-19.0.0.jar" target-dir="libs/" /> -->
